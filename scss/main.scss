@@ -1,0 +1,305 @@
+// Scss Document
+
+$font: 'Barlow Semi Condensed', sans-serif;
+
+//Primary color
+
+$moderate_violet: hsl(263, 55%, 52%);
+$very_dark_grayish_blue: hsl(217, 19%, 35%);
+$very_dark_blackish_blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+//Neutral color
+	
+$light_gray: hsl(0, 0%, 81%);
+$light_grayish_blue: hsl(210, 46%, 95%);
+
+
+h3{
+	font-family: $font;
+}
+h5{
+	margin-top: 5px;
+}
+p{
+	margin: 0px;
+}
+img{
+	border-radius: 50%;
+	width: 35px;				
+					
+	}				
+
+
+
+.picture_name_container{
+				display: flex;
+				align-content: center;
+				justify-content: space-between;
+				width: 165px;
+} 
+
+.main_container{
+			padding: 20px;
+			
+			
+}
+
+.candidate_name{
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				font-size: .75em;
+}
+
+.statement{
+				font-size: 0.90em;
+				width: 90%;
+				font-family: $font;
+				
+			}
+
+html{
+
+	font-size: 15pt;
+	
+	body{
+		background-color: $light_grayish_blue;
+		
+		
+			
+	.daniel_clifford{
+		background-color: $moderate_violet;
+		margin: 20px;
+		background-image: url("../images/bg-pattern-quotation.svg");
+		background-repeat: no-repeat;
+		background-position: 90% 2%;
+		border-radius: 10px;
+		
+		.candidate_name{
+			color: $white;
+		}
+		
+		.verified_graduate{
+			color: $white;
+			opacity: 50%;
+		}
+				
+				
+				
+		h3{
+			color: $white;
+		}
+		
+		.statement{
+			color: $white;
+			opacity: 70%;
+		}
+		
+		img{
+			
+			border: 3px solid #C5B0E8;
+			
+			
+		}
+	} /*danile clifford end*/
+	
+		.jonathan_walters{
+			background-color: $very_dark_grayish_blue;
+			margin: 20px;
+			border-radius: 10px;
+			
+			.candidate_name{
+			color: $white;
+		}
+		
+		.verified_graduate{
+			color: $white;
+			opacity: 50%;
+		}
+				
+				
+				
+		h3{
+			color: $white;
+		}
+		
+		.statement{
+			color: $white;
+			opacity: 70%;
+		}
+			
+			img{
+			
+			border: 3px solid #E6E6E6;
+			
+			
+		}
+			
+		}	
+		
+		.jeanette_harmon{
+			background-color: $white;
+			margin: 20px;
+			border-radius: 10px;
+			
+			.candidate_name{
+			color: $very_dark_blackish_blue;
+		}
+		
+		.verified_graduate{
+			color: $very_dark_blackish_blue;
+			opacity: 50%;
+		}
+				
+				
+				
+		h3{
+			color: $very_dark_blackish_blue;
+		}
+		
+		.statement{
+			color: $very_dark_blackish_blue;
+			opacity: 70%;
+		}
+			
+			
+			
+			img{
+			
+			border: 3px solid #2D3A52;
+			
+			
+		}
+			
+			
+		}
+		
+		.patrick_abrams{
+			background-color: $very_dark_blackish_blue;
+			margin: 20px;
+			border-radius: 10px;
+			
+			.candidate_name{
+			color: $white;
+		}
+		
+		.verified_graduate{
+			color: $white;
+			opacity: 50%;
+		}
+				
+				
+				
+		h3{
+			color: $white;
+		}
+		
+		.statement{
+			color: $white;
+			opacity: 70%;
+		}
+			
+			img{
+			
+			border: 3px solid #C5B0E8;
+			
+			
+		}
+			
+		}
+		
+		.kira_whittle{
+			background-color: whitesmoke;
+			margin: 20px;
+			border-radius: 10px;
+			
+			.candidate_name{
+			color: $very_dark_blackish_blue;
+		}
+		
+		.verified_graduate{
+			color: $very_dark_blackish_blue;
+			opacity: 50%;
+		}
+				
+				
+				
+		h3{
+			color: $very_dark_blackish_blue;
+		}
+		
+		.statement{
+			color: $very_dark_blackish_blue;
+			opacity: 70%;
+		}
+			
+			img{
+			
+			border: 3px solid #2D3A52;
+			
+			
+		}
+			
+		}
+		
+	}/*body end*/
+	
+	footer{
+		
+		.attribution { 
+			font-size: 11px; 
+			text-align: center; 
+		}
+		
+    .attribution a { 
+		color: hsl(228, 45%, 44%);
+		}
+} /* footer end*/
+} /*html end*/
+
+
+@media (min-width:1080px){
+	
+	body{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+		flex-direction: column;
+	 /* Flexing the body is how I get the grid in the center of the page AND making the height 100vh*/
+	
+	main{
+		
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		
+		.daniel_clifford{
+			grid-column: 1 / 3;
+			grid-row: 1 /2;
+		}
+		
+		.jonathan_walters{
+			grid-column: 3 / 4;
+			grid-row: 1 /2;
+		}
+		
+		.jeanette_harmon{
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+		}
+		
+		.patrick_abrams{
+			grid-column: 2 / 4;
+			grid-row: 2 / 3;
+		}
+		
+		.kira_whittle{
+			grid-column: 4 /5;
+			grid-row: 1/3;
+		}
+		
+	}/*main end*/
+} /* body end*/
+	
+}
