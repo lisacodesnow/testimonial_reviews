@@ -267,12 +267,12 @@ html{
 		justify-content: center;
 		height: 100vh;
 		flex-direction: column;
-	 /* Flexing the body is how I get the grid in the center of the page AND making the height 100vh*/
 	
 	main{
 		
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		min-width: 1500px;
 		
 		.daniel_clifford{
 			grid-column: 1 / 3;
